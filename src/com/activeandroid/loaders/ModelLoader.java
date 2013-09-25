@@ -1,4 +1,4 @@
-package com.activeandroid.extras;
+package com.activeandroid.loaders;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
