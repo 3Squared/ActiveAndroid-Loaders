@@ -104,6 +104,17 @@ By setting `updateOnRelationshipChanges` to `true`, the loader will also be upda
 a reference to is updated - for instance, if `Post` had a 1-M relationship with a table `Tag`, the model would be updated
 when members of the `Tag` class are changed. This adds some overhead, so leave it off unless you need it.
 
+
+
+Example Project
+-------
+
+An example project is included that shows the use of `ModelLoaders` with a custom `SyncAdpater` to keep a list of data up-to-date and syncronised with a fake webservice (no network stuff occurs for real). The credentials are included in the code - you can login with:
+'''
+email: foo@example.com 
+password: hello
+'''
+
 License
 =======
 This project made available under the MIT License.
