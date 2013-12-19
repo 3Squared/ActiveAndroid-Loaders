@@ -210,7 +210,16 @@ public class ModelLoader<T extends Model> extends AsyncTaskLoader<List<T>>
 				@Override
 				public void onStatusChanged(int which)
 				{
-					onContentChanged();
+					Handler handler = new Handler(getContext().getMainLooper());
+					Runnable runnable = new Runnable()
+					{
+						@Override
+						public void run()
+						{
+							onContentChanged();
+						}
+					};
+					handler.post(runnable);
 				}
 			};
 
