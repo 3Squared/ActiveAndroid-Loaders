@@ -6,13 +6,13 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.List;
 
+import android.content.AsyncTaskLoader;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.SyncStatusObserver;
 import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Handler;
-import android.support.v4.content.AsyncTaskLoader;
 
 import com.activeandroid.Model;
 import com.activeandroid.content.ContentProvider;
